@@ -37,10 +37,6 @@ linked libraries and functions:
 - imports: functions used by one program that are actually stored in a different program. like code libraries
 - code libraries can be connected to main executable by linking.
 
-<<<<<<< HEAD
 static, runtime, and Dynamic Linking
-=======
-- static, runtime, and Dynamic Linking
->>>>>>> 10b349f0c06f580687512914bf8f5956aec8867b
 
--- 
+- 
