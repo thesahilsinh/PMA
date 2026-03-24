@@ -95,3 +95,24 @@ Sections in PE File:
 
 ![alt text](image-2.png)
 
+now later in the chapter it shows how we can see the resource section of the program using the TOOL resource hacker
+
+other TOOLs for browsing PE Header
+- PEBrowse Professional - Free and allow us to look at BYTE level
+- PE Explorer - rich GUI but paid
+
+### PE Header summary
+
+some info that we can get from PE header which contains metadata
+
+![alt text](image-3.png)
+
+Conclusion:
+
+virustotal
+strings
+packer
+PE Header
+dependancy
+
+this gives the overall idea of what the program can do.
