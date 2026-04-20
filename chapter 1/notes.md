@@ -47,7 +47,7 @@ three ways to extract information.
 
 - dynamic linking : when functions are called that functions executes within the library. the most common and interesting for analysts.
 
-        - for this we use TOOL called Dependency Walker
+    - for this we use TOOL called Dependency Walker
 
 - imported functions : info about specific functions used by an EXE.
 - Exported Functions : 
