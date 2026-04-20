@@ -44,8 +44,70 @@ in this two section there is a difference...
 
 one more thing is odd is that size of raw data is same in every section which is 1000 so i think this malware is packed.
 
+let me check the PEiD results too...
+
+![alt text](image-11.png)
+
+![alt text](image-12.png)
+
+I am now sure that this files are **not** packed.
+
 Q-4 : check for imports that say it is a malware?
 
 I am using TOOL called Dependacy walker to check the imports
 
+![alt text](image-13.png)
 
+interesting functions are 
+
+CopyFileA
+find* functions
+
+means that find files and copy it
+
+in DLL file
+
+![alt text](image-14.png)
+
+create* functions
+sleep
+
+these are interesting
+
+means create process and sleep while execution
+
+![alt text](image-15.png)
+
+for this functions import i was not able to figure out what is going on and refer's someone's work and they say match the ordinal to the down window in that way i can figure out some functions which are..
+
+closesocket
+connect
+htons
+inet_addr
+recv
+send
+shutdown
+socket
+WSAStartup
+WSACleanup
+
+this means that this also try to connect outside network to some sort of socket connection to send and receive packets
+
+Q-5 : are there any files or host-based indicators that i can look for in infected system?
+
+![alt text](image-16.png)
+
+the use of kerne123.dll can be used as a IoC.
+
+Q - 6 : what is the network based IoC?
+
+![alt text](image-17.png)
+
+IP address could be network based IoC.
+
+Q-7 what i think the purpose of these files?
+
+based on the files we have dll file likely to be work as a dropper or a RAT as it connects to network it could be gain unauthorized access or to drop kerne123.dll file so that exe file can copy that file and gain the system access by gaining the persistance in the system
+
+Thank You")
+Sahilsinh
